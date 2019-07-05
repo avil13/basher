@@ -1,23 +1,34 @@
 const readline = require('readline');
 
 const clc = require('./utils/color');
+const getList = require('./utils/list');
 
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
+    input: process.stdin,
+    output: process.stdout
 });
 
-const sp = '\x1b7';
-const rp = '\x1b8';
-const cl = '\x1b[H\x1b[2J';
 
+const items = [
+    'bugfix/EDODEV-5300-todo-edodev-4944-label',
+    'bugfix/EDODEV-5310-todo-click.native',
+    'feature/EDODEV-4744-matomo',
+    'feature/EDODEV-4916-add-registrqation-page',
+    'feature/EDODEV-5030-input',
+    'feature/EDODEV-5207-unit-frontend',
+    'feature/EDODEV-5232-countdown',
+    'feature/EDODEV-5257-ui',
+    '* feature/EDODEV-5323-remove-animated_css',
+    'master',
+    'test',
+];
 
-console.log(cl);
-console.log(sp);
-console.log('=>', 1);
-console.log('=>', 2);
-console.log('=>', 3);
-console.log(rp);
+console.log(clc._clear);
+console.log(clc._saveCursor);
+console.log(getList({
+    list: items
+}));
+console.log(clc._restoreCursor);
 
 
 
