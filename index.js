@@ -10,15 +10,15 @@ const rl = readline.createInterface({
 
 
 const items = [
-    'bugfix/EDODEV-5300-todo-edodev-4944-label',
-    'bugfix/EDODEV-5310-todo-click.native',
-    'feature/EDODEV-4744-matomo',
-    'feature/EDODEV-4916-add-registrqation-page',
-    'feature/EDODEV-5030-input',
-    'feature/EDODEV-5207-unit-frontend',
-    'feature/EDODEV-5232-countdown',
-    'feature/EDODEV-5257-ui',
-    '* feature/EDODEV-5323-remove-animated_css',
+    'bugfix/ID-100-todo-edodev-4944-label',
+    'bugfix/ID-100-todo-click.native',
+    'feature/ID-100-matomo',
+    'feature/ID-100-add-registrqation-page',
+    'feature/ID-100-input',
+    'feature/ID-100-unit-frontend',
+    'feature/ID-100-countdown',
+    'feature/ID-100-ui',
+    '* feature/ID-100-remove-animated_css',
     'master',
     'test',
 ];

@@ -11,6 +11,9 @@ module.exports = function (opt = {}) {
         ...opt
     };
 
+    /**
+     * Creating list
+     */
     function getList() {
         const result = [];
 
@@ -32,6 +35,9 @@ module.exports = function (opt = {}) {
         return result.join('\n');
     };
 
+    /**
+     * Scroll down
+    */
     getList.down = function() {
         if (params.selectedIndex < params.list.length + 1) {
             ++params.selectedIndex;
@@ -40,6 +46,10 @@ module.exports = function (opt = {}) {
         }
     };
 
+
+    /**
+     * Scroll up
+    */
     getList.up = function() {
         if (params.selectedIndex === 0) {
             params.selectedIndex = params.list.length - 1;
@@ -48,6 +58,9 @@ module.exports = function (opt = {}) {
         }
     };
 
+    /**
+     * Update list
+    */
     getList.setList = function(list) {
         params.list = list;
     };
