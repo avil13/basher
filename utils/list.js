@@ -2,6 +2,7 @@ module.exports = function (opt = {}) {
 
     const defaultParams = {
         selectedIndex: 0,
+        cursor: '➡',
         max: 5,
         list: []
     };
@@ -27,7 +28,7 @@ module.exports = function (opt = {}) {
                 break;
             }
 
-            const cursor = params.selectedIndex === i ? '➡' : ' '
+            const cursor = params.selectedIndex === i ? defaultParams.cursor : ' '
             const item = tmpList[i];
             result.push(`${cursor} ${item}`);
         }
