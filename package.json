@@ -5,12 +5,20 @@
   "main": "select.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "build": "rm -rf ./dist && tsc -p .",
+    "prepublish": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.18",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "jest-canvas-mock": "^2.2.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
   }
 }
