@@ -8,10 +8,8 @@ const rl = readline.createInterface({
 rl.question('What do you think of Node.js? ', (answer) => {
   // TODO: Log the answer in a database
   console.log('=>', answer);
-  
+
   console.log(`Thank you for your valuable feedback: ${answer}`);
 
   rl.close();
 });
-
-
